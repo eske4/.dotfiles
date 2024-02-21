@@ -23,4 +23,11 @@ sudo bash "$SCRIPTS_DIR/installPackages.sh" "$PACKAGE_LIST"
 bash "$SCRIPTS_DIR/installFont.sh"
 bash "$SCRIPTS_DIR/linkConfig.sh"
 
+print_header "Shell"
+# Change shell to Zsh
+chsh -s $(which zsh)
+
+# Print green text indicating shell change
+echo -e "\e[32mShell changed to Zsh.\e[0m"
+
 print_header "Configuration completed."
