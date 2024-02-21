@@ -1,9 +1,0 @@
-[submodule ".tmux/plugins/tpm"]
-	path = configs/.tmux/plugins/tpm/
-	url = https://github.com/tmux-plugins/tpm
-[submodule ".config/nvim"]
-	path = configs/.config/nvim/
-	url = https://github.com/eske4/klintoe-nvim-setup
-[submodule ".local/.share/zap"]
-	path = configs/.local/share/zap/
-	url = https://github.com/zap-zsh/zap
