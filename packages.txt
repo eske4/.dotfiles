@@ -5,3 +5,5 @@ zsh
 starship
 kitty
 htop
+wget
+

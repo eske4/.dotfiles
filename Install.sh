@@ -20,7 +20,11 @@ fi
 
 # Trigger the scripts inside the 'scripts' directory using bash
 sudo bash "$SCRIPTS_DIR/installPackages.sh" "$PACKAGE_LIST"
-bash "$SCRIPTS_DIR/installFont.sh"
+
+print_header "Fonts"
+bash "$SCRIPTS_DIR/installFont.sh" "FiraCode" "https://github.com/tonsky/FiraCode/releases/download/6.2/Fira_Code_v6.2.zip"
+bash "$SCRIPTS_DIR/installFont.sh" "Maple" "https://github.com/subframe7536/maple-font/releases/download/v7.0-beta3/MapleMono-Hinted.zip"
+
 bash "$SCRIPTS_DIR/linkConfig.sh"
 
 print_header "Shell"
