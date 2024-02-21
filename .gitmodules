@@ -4,6 +4,6 @@
 [submodule "configs/.local/share/zap"]
 	path = configs/.local/share/zap
 	url = https://github.com/zap-zsh/zap
-[submodule ".tmux/plugins/tpm"]
-	path = .tmux/plugins/tpm
+[submodule "configs/.tmux/plugins/tpm"]
+	path = configs/.tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
