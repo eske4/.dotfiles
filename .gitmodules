@@ -1,3 +1,6 @@
 [submodule "configs/.config/nvim"]
 	path = configs/.config/nvim
 	url = https://github.com/eske4/klintoe-nvim-setup
+[submodule "configs/.local/share/zap"]
+	path = configs/.local/share/zap
+	url = https://github.com/zap-zsh/zap
