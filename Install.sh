@@ -20,7 +20,10 @@ if [ ! -f "$PACKAGE_LIST" ]; then
 fi
 
 print_header "Installing packages"
-sudo bash "$SCRIPTS_DIR/installPackages.sh" "$PACKAGE_LIST"
+bash "$SCRIPTS_DIR/installPackages.sh" "$PACKAGE_LIST"
+
+print_header "configuring swayosd"
+bash "$SCRIPTS_DIR/configure_swayosd.sh"
 
 print_header "eww"
 bash "$SCRIPTS_DIR/installEww.sh"

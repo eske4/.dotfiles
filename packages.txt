@@ -53,3 +53,4 @@ unzip
 zip
 wget
 swaync
+swayosd

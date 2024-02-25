@@ -14,7 +14,7 @@ fi
 while IFS= read -r package || [[ -n "$package" ]]; do
     # Display a message indicating the package is being installed
     echo -n "Installing package: $package ..."
-    sudo yay -S --noconfirm "$package" > /dev/null 2>&1
+    yay -S --noconfirm "$package" > /dev/null 2>&1
     if [ $? -eq 0 ]; then
         if [ "$package" == 'rustup' ]; then
             sudo pacman -R --noconfirm rust > /dev/null 2>&1
