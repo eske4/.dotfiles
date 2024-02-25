@@ -6,6 +6,7 @@ print_header() {
 
 sudo -v
 
+
 # Path to the scripts directory
 SCRIPTS_DIR="scripts"
 
@@ -18,13 +19,17 @@ if [ ! -f "$PACKAGE_LIST" ]; then
     exit 1
 fi
 
-# Trigger the scripts inside the 'scripts' directory using bash
+print_header "Installing packages"
 sudo bash "$SCRIPTS_DIR/installPackages.sh" "$PACKAGE_LIST"
+
+print_header "eww"
+bash "$SCRIPTS_DIR/installEww.sh"
 
 print_header "Fonts"
 bash "$SCRIPTS_DIR/installFont.sh" "FiraCode" "https://github.com/tonsky/FiraCode/releases/download/6.2/Fira_Code_v6.2.zip"
 bash "$SCRIPTS_DIR/installFont.sh" "Maple" "https://github.com/subframe7536/maple-font/releases/download/v7.0-beta3/MapleMono-Hinted.zip"
 
+print_header "Linking"
 bash "$SCRIPTS_DIR/linkConfig.sh"
 
 print_header "Shell"

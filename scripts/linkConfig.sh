@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# Function to print headers
-print_header() {
-    echo -e "\n\e[1m$1\e[0m"
-}
-
 # Define ANSI color codes
 GREEN='\033[0;32m'
 RED='\033[0;31m'
@@ -13,9 +8,6 @@ NC='\033[0m' # No Color
 # Define variables
 DOTFILES_DIR="$HOME/.dotfiles/configs/"
 TARGET_DIR="$HOME"
-
-# Print header for config link
-print_header "Config link"
 
 # Check if the dotfiles directory exists
 if [ ! -d "$DOTFILES_DIR" ]; then

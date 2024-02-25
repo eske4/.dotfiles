@@ -23,3 +23,8 @@ plug "zap-zsh/exa"
 autoload -Uz compinit
 
 eval "$(starship init zsh)"
+
+export PATH="/usr/bin:$PATH"
+export PATH="/opt/flutter/bin:$PATH"
+export CHROME_EXECUTEABLE="/usr/bin/google-chrome-stable"
+export PATH="$PATH":"$HOME/.pub-cache/bin"
