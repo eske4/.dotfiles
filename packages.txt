@@ -45,6 +45,7 @@ pavucontrol
 qt6-wayland
 qt5-wayland
 qt5ct
+qt6ct
 slurp
 grim
 npm
@@ -54,3 +55,4 @@ zip
 wget
 swaync
 swayosd
+python-neovim
