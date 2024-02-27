@@ -20,13 +20,25 @@ if [ ! -f "$PACKAGE_LIST" ]; then
 fi
 
 print_header "Installing packages"
-bash "$SCRIPTS_DIR/installPackages.sh" "$PACKAGE_LIST"
+#bash "$SCRIPTS_DIR/installPackages.sh" "$PACKAGE_LIST"
 
 print_header "configuring swayosd"
 bash "$SCRIPTS_DIR/configure_swayosd.sh"
 
-print_header "eww"
+print_header "installing eww"
 bash "$SCRIPTS_DIR/installEww.sh"
+
+print_header "Installing swww"
+bash "$SCRIPTS_DIR/installSwww.sh"
+
+print_header "Installing hypridle"
+bash "$SCRIPTS_DIR/installHypridle.sh"
+
+print_header "Installing hyprlock"
+bash "$SCRIPTS_DIR/installHyprlock.sh"
+
+print_header "Installing Waybar"
+bash "$SCRIPTS_DIR/installWaybar.sh"
 
 print_header "Fonts"
 bash "$SCRIPTS_DIR/installFont.sh" "FiraCode" "https://github.com/tonsky/FiraCode/releases/download/6.2/Fira_Code_v6.2.zip"
@@ -38,6 +50,9 @@ bash "$SCRIPTS_DIR/linkConfig.sh"
 print_header "Shell"
 # Change shell to Zsh
 chsh -s $(which zsh)
+
+print_header "configuring desktop services"
+bash "$SCRIPTS_DIR/configure_desktopservices.sh"
 
 # Print green text indicating shell change
 echo -e "\e[32mShell changed to Zsh.\e[0m"

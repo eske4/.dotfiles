@@ -25,7 +25,7 @@
       "firefoxdeveloperedition": "firefox-developer-edition"
     },
     "rewrite": {
-      "Firefox Web Browser": "Firefox",
+      "Firefox Web Browser": "Firefox"
     }
   },
 
@@ -117,7 +117,13 @@
   // Group Settings
   "group/settings": {
     "orientation": "inherit",
-    "modules": ["bluetooth", "network", "custom/nightmode", "custom/wallpaper", "pulseaudio"]
+    "modules": [
+      "bluetooth",
+      "network",
+      "custom/nightmode",
+      "custom/wallpaper",
+      "pulseaudio"
+    ]
   },
 
   // Group Quicklinks
@@ -162,7 +168,7 @@
     "format": "{icon}   {volume}%",
     "format-bluetooth": "{volume}% {icon} {format_source}",
     "format-bluetooth-muted": " {icon} {format_source}",
-    "format-muted": " {format_source}",
+    "format-muted": "󰖁 {format_source}",
     "format-source": "{volume}% ",
     "format-source-muted": "",
     "format-icons": {
@@ -172,7 +178,7 @@
       "phone": "",
       "portable": "",
       "car": "",
-      "default": ["", " ", " "]
+      "default": ["", " ", " "]
     },
     "on-click": "pavucontrol"
   },
@@ -184,8 +190,7 @@
     "format-off": "",
     "interval": 30,
     "on-click": "blueman-manager"
-},
-
+  },
 
   // Other
   "user": {
@@ -219,10 +224,9 @@
     "format-alt": ""
   },
 
-
   "custom/applauncher": {
     "format": "",
     "on-click": "rofi -show drun",
-    "tooltip": false,
+    "tooltip": false
   }
 }

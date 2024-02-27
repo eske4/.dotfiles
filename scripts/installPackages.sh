@@ -24,3 +24,5 @@ while IFS= read -r package || [[ -n "$package" ]]; do
         echo -e "\e[31m[Failed]\e[0m"
     fi
 done < "$PACKAGE_LIST"
+
+sudo systemctl enable avahi-daemon 2>&1

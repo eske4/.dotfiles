@@ -1,12 +1,9 @@
-killall waybar
-
-cp ~/.cache/wal/colors-waybar.css ~/.dotfiles/configs/.config/waybar/themes/colors-import.css
-
+#!/bin/bash
 # Read the content of colors-kitty.conf
 content=$(cat ~/.cache/wal/colors-kitty.conf)
 
 # Define the custom configurations
-custom_config="font_family Maple
+custom_config="font_family Maple Mono
 bold_font auto
 italic_font auto
 bold_italic_font auto
@@ -25,6 +22,4 @@ echo "$content" >> "$temp_file"
 # Copy the combined configurations to the destination
 cp "$temp_file" ~/.dotfiles/configs/.config/kitty/kitty.conf
 
-
-waybar -c ~/.config/waybar/themes/config -s ~/.config/waybar/themes/style.css &
 
