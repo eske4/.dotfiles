@@ -19,4 +19,8 @@ makepkg -si
 cd ..
 rm -rf yay
 
-echo "Yay has been installed successfully."
+if command -v yay &> /dev/null; then
+    echo "Yay has been installed successfully."
+fi
+
+

@@ -78,9 +78,12 @@ wayland-protocols
 avahi
 mpd
 xdg-desktop-portal-gtk
+xdg-desktop-portal-hyprland
 wpgtk
 python-pywal
 python-pywalfox
 pywal-discord
 betterdiscordctl
 thunderbird
+wlogout
+lxappearance
