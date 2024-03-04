@@ -25,7 +25,6 @@ font-manager
 luarocks
 python
 python-pip
-python-pipx
 imagemagick
 awesome-terminal-fonts
 pamixer
@@ -76,3 +75,11 @@ meson
 scdoc
 wayland-protocols
 avahi
+mpd
+xdg-desktop-portal-gtk
+wpgtk
+python-pywal
+python-pywalfox
+pywal-discord
+betterdiscordctl
+thunderbird

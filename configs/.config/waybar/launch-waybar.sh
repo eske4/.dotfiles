@@ -12,7 +12,7 @@ fi
 touch "$TEMP_FILE"
 
 # Your main script logic goes here
-killall waybar
+killall waybar -9
 
 # Wait until waybar is no longer running
 while pgrep -x waybar > /dev/null; do

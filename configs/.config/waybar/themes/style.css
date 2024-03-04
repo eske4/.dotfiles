@@ -13,7 +13,7 @@
 * {
   /* `otf-font-awesome` is required to be installed for icons */
   font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif, Maple;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 window#waybar {
@@ -22,24 +22,39 @@ window#waybar {
   transition-duration: 0.5s;
 }
 
+#workspaces {
+  background-color: @color4;
+  padding: 0px 8px;
+  border-radius: 0 0px 15px 15px;
+  margin: 0px 0px 30px 0px;
+}
+
 #workspaces button {
   box-shadow:
-    inset 0 0 0 1.5px @background,
-    /* Border */ 2px 2px 5px @black; /* Outer shadow */
-  padding: 2px 15px;
-  background-color: transparent;
-  color: @background;
+    inset 0px 0px 0px 0.5px @background,
+    /* Border */ 0px 0px 0px @black; /* Outer shadow */
+  padding: 0px 10px;
+  margin: 8px 3px;
+  background-color: @color5;
+  color: @color0;
   border-radius: 10px;
   border: none;
-  margin: 15px 2px;
 }
 
 #workspaces button:hover {
-  background: @workspacehighlight;
+  background: @color1;
+  color: @color0;
+  box-shadow:
+    inset 0 0 0 1px @background,
+    /* Border */ 2px 2px 5px @color5;
 }
 
 #workspaces button.active {
-  background: @workspacehighlight;
+  background: @color1;
+  color: @color0;
+  box-shadow:
+    inset 0 0 0 2px @color5,
+    /* Border */ 2px 6px 4px @color0;
 }
 
 #clock,
@@ -66,9 +81,9 @@ window#waybar {
 #idle_inhibator,
 #language,
 #mpd {
-  background-color: @iconbackground;
   padding: 5px 10px;
-  margin: 20px 3px 20px 3px;
+  margin: 5px 3px 35px 3px;
+  padding: 0px 10px;
   border-radius: 8px;
   color: @iconcolor;
   box-shadow:
@@ -79,25 +94,15 @@ window#waybar {
 }
 
 #taskbar {
-  background-color: @color5;
-  padding: 10px 20px;
-  margin: 10px 3px 10px 3px;
-  border-radius: 20px;
-  border: 0.1px solid @background;
+  margin: 0px 0px 30px 0px;
+  padding: 5px 10px;
+  border-radius: 15px;
 }
 
 #taskbar button {
-  border: 2px solid @background;
-  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.31);
+  border-radius: 10px;
   margin: 0 2px;
-}
-
-#workspaces {
-  border: 2px solid @workspaceoutline;
-  background-color: @color5;
-  border-radius: 15px;
-  margin: 10px 3px 10px 3px;
-  padding: 0px 10px;
 }
 
 tooltip {

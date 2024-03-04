@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/eske/.config/wpg/wallpapers/0e010c5fc434fe9ba8b65f7d1d5043e9.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#161010",
+        "foreground": "#a8aabb",
+        "cursor": "#a8aabb"
+    },
+    "colors": {
+        "color0": "#161010",
+        "color1": "#FBB005",
+        "color2": "#CBAD3B",
+        "color3": "#FBCD04",
+        "color4": "#FADC1F",
+        "color5": "#AF8D69",
+        "color6": "#D19D6A",
+        "color7": "#a8aabb",
+        "color8": "#757682",
+        "color9": "#FBB005",
+        "color10": "#CBAD3B",
+        "color11": "#FBCD04",
+        "color12": "#FADC1F",
+        "color13": "#AF8D69",
+        "color14": "#D19D6A",
+        "color15": "#a8aabb"
+    }
+}

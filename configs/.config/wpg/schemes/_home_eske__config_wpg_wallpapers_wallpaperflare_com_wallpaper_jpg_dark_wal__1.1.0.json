@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/eske/.config/wpg/wallpapers/wallpaperflare.com_wallpaper.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0e081b",
+        "foreground": "#d6d0ed",
+        "cursor": "#d6d0ed"
+    },
+    "colors": {
+        "color0": "#0e081b",
+        "color1": "#6B54D5",
+        "color2": "#9351B0",
+        "color3": "#A44EB9",
+        "color4": "#9D60D6",
+        "color5": "#CF71D7",
+        "color6": "#6E96DD",
+        "color7": "#d6d0ed",
+        "color8": "#9591a5",
+        "color9": "#6B54D5",
+        "color10": "#9351B0",
+        "color11": "#A44EB9",
+        "color12": "#9D60D6",
+        "color13": "#CF71D7",
+        "color14": "#6E96DD",
+        "color15": "#d6d0ed"
+    }
+}

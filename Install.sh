@@ -20,10 +20,13 @@ if [ ! -f "$PACKAGE_LIST" ]; then
 fi
 
 print_header "Installing packages"
-#bash "$SCRIPTS_DIR/installPackages.sh" "$PACKAGE_LIST"
+bash "$SCRIPTS_DIR/installPackages.sh" "$PACKAGE_LIST"
 
 print_header "configuring swayosd"
 bash "$SCRIPTS_DIR/configure_swayosd.sh"
+
+print_header "Installing Waybar"
+bash "$SCRIPTS_DIR/installWaybar.sh"
 
 print_header "installing eww"
 bash "$SCRIPTS_DIR/installEww.sh"
@@ -37,8 +40,11 @@ bash "$SCRIPTS_DIR/installHypridle.sh"
 print_header "Installing hyprlock"
 bash "$SCRIPTS_DIR/installHyprlock.sh"
 
-print_header "Installing Waybar"
-bash "$SCRIPTS_DIR/installWaybar.sh"
+print_header "Installing Pywal Discord"
+bash "$SCRIPTS_DIR/installPywaldiscord.sh"
+
+print_header "Installing Steam"
+bash "$SCRIPTS_DIR/steam_installer.sh"
 
 print_header "Fonts"
 bash "$SCRIPTS_DIR/installFont.sh" "FiraCode" "https://github.com/tonsky/FiraCode/releases/download/6.2/Fira_Code_v6.2.zip"
