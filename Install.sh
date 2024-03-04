@@ -19,6 +19,9 @@ if [ ! -f "$PACKAGE_LIST" ]; then
     exit 1
 fi
 
+print_header "Installing yay"
+bash "$SCRIPTS_DIR/installYay.sh" "$PACKAGE_LIST"
+
 print_header "Installing packages"
 bash "$SCRIPTS_DIR/installPackages.sh" "$PACKAGE_LIST"
 

@@ -1,9 +1,10 @@
+hyprland-git
+kitty
 stow
 neovim
 tmux
 zsh
 starship
-kitty
 htop
 wget
 gtk3
